@@ -58,6 +58,9 @@ endif
 
 LOCAL_EMMA_COVERAGE_FILTER := +com.android.mail.*, +com.android.emailcommon.*, +com.google.android.mail.*
 
+# Enable dexpreopt to speed boot time
+WITH_DEXPREOPT := true
+
 include $(BUILD_PACKAGE)
 
 ##################################################
